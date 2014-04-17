@@ -1,0 +1,26 @@
+{
+  "name": "vari",
+  "version": "0.0.1",
+  "author": "Juuso Haavisto <juuso@mail.com>",
+  "description": "a naive visual illusion based captcha system",
+  "main": "./main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/9uuso/vari.git"
+  },
+  "keywords": [
+    "captcha",
+    "visual",
+    "colors",
+    "hex"
+  ],
+  "dependencies": {
+    "css-color-names": "0.0.0",
+    "underscore": "^1.6.0",
+    "dot": "^1.0.2"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.6"
+  }
+}
