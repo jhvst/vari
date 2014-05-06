@@ -25,8 +25,8 @@ Vari.prototype.Template = function() {
 	'</form>',
 	'<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>',
 	'<script>',
-		'function red (){ $("#vari").css("color", "{{=it.red}}");  setTimeout(function(){ blue(); }, 15); }',
-		'function blue(){ $("#vari").css("color", "{{=it.blue}}"); setTimeout(function(){ red();  }, 15); }',
+		'function red (){ $("#vari").css("color", "{{=it.red}}");  setTimeout(function(){ blue(); }, 16); }',
+		'function blue(){ $("#vari").css("color", "{{=it.blue}}"); setTimeout(function(){ red();  }, 16); }',
 		'blue()',
 	'</script>'].join('\n');
 	var template = doT.template(tt)
@@ -40,3 +40,4 @@ Vari.prototype.Generate = function() {
     return hexcodes[this.GetRandomInt(1, 147)];
 };
 
+module.exports = Vari.prototype.Template();
