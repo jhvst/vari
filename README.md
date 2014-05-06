@@ -1,12 +1,12 @@
 vari
 ================
-## a naive visual illusion based captcha system
+# visual illusion based captcha system
 
-Vari is a naive way to seperate dumb bots from clever bots (and humans). The idea is to have effortless and rather unique way of getting rid of annoyances with pre-script bots. So basically a roadblock for any hacker who wants to use your online service. That's what people love, after all, some challenge for being (questionable) ingenious.
+Vari (comes from Finnish word väri, which means colour) is a naive way to seperate dumb bots from clever bots (and humans).
 
-Currently under work-in-progress, so things are sure to change. Anyway, here is briefly the idea of the whole thing:
+The program flashes two colors (for example red and blue) at very high speed. What you would see instead of red and blue would be purple. Taking a computer screenshot would show the color to be either red or blue, but not purple. If the process could be crypted so that the colors could not be guessed, no bot should have an idea what color is actually displayed.
 
-The program flashes two colors at very high speed, lets say for example, red and blue. The color could be either CSS or just an image file, but the image is supposed to change at rate of something like 15ms. What this results in is a visual illusion in humans seeing neither blue or red, but rather purple. Now, taking a computer screenshot would render the page to have either red or blue element, but more importantly, not purple. If the colors are randomly selected or inserted to page via image, the source code should not give a clue what color the visual illusion one is.
+Have a look at example directory for a visual demo. You can run it with node and see the magic happen at localhost:8000.
 
 As I said, this is naive implementation for number of reasons:
 
@@ -19,6 +19,3 @@ As I said, this is naive implementation for number of reasons:
 7. To make issue #5 and #6 even possible, a centralized challenge server (oh god) would be needed.
 
 Luckily everything doesn't need to be webscale and serious business.
-
-
-Licensed under MIT for so long that I find something that fits better (see WTFPL).
